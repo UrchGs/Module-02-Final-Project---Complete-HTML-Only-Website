@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Application Form | Brightpath Maths Tutoring</title>
+  <meta name="description" content="Apply for maths tutoring at Brightpath by completing the student application form.">
+  <meta name="author" content="Brightpath Maths Tutoring">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body id="top">
+  <p><a href="#main">Skip to main content</a></p>
+  <header>
+    <p>
+      <a href="../index.html"><img src="../images/logo.png" alt="Brightpath Maths Tutoring, home page" width="64" height="64"></a>
+      <strong>Brightpath Maths Tutoring</strong>
+    </p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../pages/application.html" aria-current="page">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Student application form</h1>
+    <p>Complete this form to apply for lessons. This is a demonstration form and does not send data anywhere, so please do not enter real private information. See our <a href="../services.html#prices">prices</a> or <a href="../contact.html">contact us</a> if you have questions.</p>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Student details</legend>
+        <p><label for="a-name">Student&rsquo;s full name (required)</label><br>
+        <input type="text" id="a-name" name="student_name" required minlength="2" maxlength="60" autocomplete="name"></p>
+        <p><label for="a-email">Parent or guardian email (required)</label><br>
+        <input type="email" id="a-email" name="email" required autocomplete="email"></p>
+        <p><label for="a-tel">Telephone number (required)</label><br>
+        <input type="tel" id="a-tel" name="telephone" required pattern="\+?[0-9 ]{8,15}" title="Enter 8 to 15 digits, with an optional + at the start" autocomplete="tel"></p>
+        <p><label for="a-age">Student&rsquo;s age (6 to 18)</label><br>
+        <input type="number" id="a-age" name="age" min="6" max="18" step="1" required></p>
+      </fieldset>
+      <fieldset>
+        <legend>Learning needs</legend>
+        <p><label for="a-level">Current level (required)</label><br>
+        <select id="a-level" name="level" required>
+          <option value="">Choose a level</option>
+          <option value="g6-7">Grades 6 to 7</option>
+          <option value="g8-9">Grades 8 to 9</option>
+          <option value="g10-12">Grades 10 to 12</option>
+        </select></p>
+        <fieldset>
+          <legend>Lesson format (required)</legend>
+          <p><input type="radio" id="a-online" name="format" value="online" required>
+          <label for="a-online">Online</label></p>
+          <p><input type="radio" id="a-inperson" name="format" value="in-person">
+          <label for="a-inperson">In person</label></p>
+          <p><input type="radio" id="a-either" name="format" value="either">
+          <label for="a-either">Either is fine</label></p>
+        </fieldset>
+        <fieldset>
+          <legend>Topics your student needs help with</legend>
+          <p><input type="checkbox" id="t-algebra" name="topics" value="algebra">
+          <label for="t-algebra">Algebra</label></p>
+          <p><input type="checkbox" id="t-geometry" name="topics" value="geometry">
+          <label for="t-geometry">Geometry</label></p>
+          <p><input type="checkbox" id="t-fractions" name="topics" value="fractions">
+          <label for="t-fractions">Fractions and decimals</label></p>
+          <p><input type="checkbox" id="t-stats" name="topics" value="statistics">
+          <label for="t-stats">Statistics</label></p>
+          <p><input type="checkbox" id="t-exams" name="topics" value="exams">
+          <label for="t-exams">Exam preparation</label></p>
+        </fieldset>
+        <p><label for="a-goals">Learning goals (up to 400 characters)</label><br>
+        <textarea id="a-goals" name="goals" rows="5" cols="40" maxlength="400"></textarea></p>
+      </fieldset>
+      <fieldset>
+        <legend>Agreement</legend>
+        <p><input type="checkbox" id="a-agree" name="agree" value="yes" required>
+        <label for="a-agree">I agree that Brightpath may contact me about this application (required)</label></p>
+      </fieldset>
+      <p><button type="submit">Send application</button></p>
+    </form>
+    <p><a href="../index.html">Return to the home page</a></p>
+  </main>
+  <footer>
+    <p>&copy; 2026 Brightpath Maths Tutoring. All rights reserved.</p>
+    <address>
+      Email: <a href="mailto:hello@brightpath.example">hello@brightpath.example</a><br>
+      Phone: <a href="tel:+660000000000">+66 00 000 0000</a>
+    </address>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+</body>
+</html>
